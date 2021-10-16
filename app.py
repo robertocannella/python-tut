@@ -1,39 +1,36 @@
-from types import coroutine
+x = 10  # decimal
+x = 0b10  # binary
+print(x)  # binary value
+print(bin(x))  # binary representation
 
+x = 0x12c  # hexidecimal
+print(x)  # decimal value
+print(hex(x))  # hexidecimal representation
 
-string = "This is A String"
+# complex numbers
 
-# String indexing
-print(len(string))
-print(string[0])
-print(string[-1])
+y: complex = (1 + 2j)
+print(y)
 
-# Slicing strings
-print(string[0:3])
-print(string[:3])  # excluding a start index, python will imply 0index
+# arithmetic
+x = 10 + 3  # add
+print(x)
+x = 10 - 3  # subtract
+print(x)
+x = 10 * 3  # multiply
+print(x)
+m = 10 / 3  # divide (no remainder)
+print(m)
+x = 10 // 3  # divide (with remainder)
+print(x)
+x = 10 % 2  # return remaider
+print(x)
+x = 10 ** 3  # raise to power
+print(x)
 
-# Escape sequences (inherited from C language)
-# \'  \"  \\ \n
-msg: str = "Python \"Programming\""
-print(msg)
+# augmented assignment operators for all arithmetic operations
 
-# Concatination
-first: str = "Roberto"
-last: str = "Cannella"
-full: str = first + " " + last
-print(full)
+x += 1
+print(x)
 
-# String Formatting {expressions can be handled inside curly braces}
-alternative_full: str = f"{first} {last}"
-print(alternative_full)
-
-course: str = "Python Programming"
-print(course.upper())  # UPPERCASE
-print(course.lower())  # lowercase
-print(course.title())  # Title Case
-print(course.count("P"))  # counts occurrances
-print(course.strip())  # remove white space
-print(course.find("Pro"))  # search (returns -1 if false)
-print(course.replace("P", "-"))  # replace
-print("Programming" in course)  # returns boolean
-print("Programming" not in course)  # returns boolean
+# NO fuctions for increment or decrement x-- x++
