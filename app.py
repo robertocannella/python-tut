@@ -1,17 +1,9 @@
-# not operator
-name = " "
-
-if not name.strip():
-    print("Name is empty.")
+# ternary operator
+age = 12
+if age >= 18:
+    message = "Elegible"
 else:
-    print("Hello " + name)
+    message = "Not Elegible"
 
-# logical and
-age = 22
-if age > 18 and age < 65:
-    print("Elegible")
-
-# beter syntax of above
-
-if 18 < age < 65:
-    print("Elegible")
+message = "Elegible" if age >= 18 else "Not Elegible"
+print(message)
