@@ -1,9 +1,20 @@
-# ternary operator
-age = 12
-if age >= 18:
-    message = "Elegible"
-else:
-    message = "Not Elegible"
+# for x in "Python":
+#     print(x)
 
-message = "Elegible" if age >= 18 else "Not Elegible"
-print(message)
+# for x in ['a', 'b', 'c']:
+#     print(x)
+
+# interate thru range (for i loop)
+for x in range(5):
+    print(x)
+
+    # start / end
+for x in range(2, 5):
+    print(x)
+
+    # start / end / step
+for x in range(0, 10, 2):
+    print(x)
+
+    # range objects  (low memory vs lists)
+print(type(range(5)))
