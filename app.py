@@ -1,15 +1,14 @@
-x = input("x: ")
-print(x)
-y = bool(x)
-print(y)
-print(int(x))
-print(bool(0))
-print(float(x))
-print(str(x))
+age = 33
+if age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+else:
+    print("child")
 
-# falsy values (return false when converted to a boolean)
+print("all done!")
 
-# 0
-# ""
-# []
-# None (null)
+if age < 2:
+    pass
+else:
+    pass
