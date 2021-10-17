@@ -1,14 +1,17 @@
-age = 33
-if age >= 18:
-    print("Adult")
-elif age >= 13:
-    print("Teenager")
-else:
-    print("child")
+# not operator
+name = " "
 
-print("all done!")
-
-if age < 2:
-    pass
+if not name.strip():
+    print("Name is empty.")
 else:
-    pass
+    print("Hello " + name)
+
+# logical and
+age = 22
+if age > 18 and age < 65:
+    print("Elegible")
+
+# beter syntax of above
+
+if 18 < age < 65:
+    print("Elegible")
