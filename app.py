@@ -1,7 +1,8 @@
-guess = 0
-answer = 5
+# type anotation during fuction declarations
+# -> return type:
+def increment(number: int, by: int = 1) -> tuple:
+    return (number, number + by)  # returns a tuple (not modifiable)
 
-while answer != guess:
-    guess = int(input("Guess: "))
-else:  # optional
-    pass
+
+print(increment(3, by=4))  # keyword argument
+print(increment(3))
