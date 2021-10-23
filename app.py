@@ -1,8 +1,18 @@
-# type anotation during fuction declarations
-# -> return type:
-def increment(number: int, by: int = 1) -> tuple:
-    return (number, number + by)  # returns a tuple (not modifiable)
+# arguments
+
+def multiply(a, b):
+    return a*b
 
 
-print(increment(3, by=4))  # keyword argument
-print(increment(3))
+multiply(1, 3)
+
+
+def multiplyAlt(*list):
+    total = 1
+    for number in list:
+        total *= number
+    return total
+    print(list)
+
+
+print(multiplyAlt(1, 2, 3, 4))
