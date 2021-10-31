@@ -1,18 +1,10 @@
-# arguments
-
-def multiply(a, b):
-    return a*b
+people = ['Dr. Christopher Brooks', 'Dr. Kevyn Collins-Thompson',
+          'Dr. VG Vinod Vydiswaran', 'Dr. Daniel Romero']
 
 
-multiply(1, 3)
+def split_title_and_name(person):
+    person.replace(person.split(' ')[1], '')
+    return " ".join(person.split())
 
 
-def multiplyAlt(*list):
-    total = 1
-    for number in list:
-        total *= number
-    return total
-    print(list)
-
-
-print(multiplyAlt(1, 2, 3, 4))
+print(list(map(split_title_and_name, people)))
